@@ -12,9 +12,6 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <h1>Welcome to my portfolio!</h1>
-            <p>This is where you can learn more about my work and projects.</p>
         </div>
     );
 }
