@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="backdrop-blur fixed w-full h-20 shadow-xl z-[100]">
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Image
-                    src="/../public/assets/db.jpg"
+                    src="/../public/assets/db.png"
                     alt="/"
                     width="100"
                     height="50"
@@ -73,7 +73,7 @@ export default function Navbar() {
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Image
-                                src="/../public/assets/db.jpg"
+                                src="/../public/assets/db.png"
                                 width="70"
                                 height="35"
                                 alt="/"
