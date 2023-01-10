@@ -4,10 +4,27 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
+    const [navBg, setNavBg] = useState("#ecf0f3");
+    const [linkColor, setLinkColor] = useState("#1f2937");
+    const router = useRouter();
+
+    useEffect(() => {
+        if (
+            router.asPath === "/socialnetwork" ||
+            router.asPath === "/imageboard"
+        ) {
+            setNavBg("#ecf0f3");
+            setLinkColor("#ecf0f3");
+        } else {
+            setNavBg("transparent");
+            setLinkColor("#1f2937");
+        }
+    }, [router]);
 
     const handleNav = () => {
         setNav(!nav);
@@ -33,7 +50,7 @@ export default function Navbar() {
             }
         >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                <Link href="/">
+                <Link href="/" style={{ backgroundColor: `${navBg}` }}>
                     <Image
                         src="/../public/assets/db.png"
                         alt="/"
@@ -44,7 +61,10 @@ export default function Navbar() {
                 </Link>
 
                 <div>
-                    <ul className="hidden md:flex">
+                    <ul
+                        style={{ color: `${linkColor}` }}
+                        className="hidden md:flex"
+                    >
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b hover:border-b-teal-500">
                                 Home
@@ -71,7 +91,10 @@ export default function Navbar() {
                             </li>
                         </Link>
                     </ul>
-                    <div onClick={handleNav} className="md:hidden ">
+                    <div
+                        onClick={handleNav}
+                        className="md:hidden cursor-pointer"
+                    >
                         <AiOutlineMenu size={25} />
                     </div>
                 </div>
@@ -162,20 +185,34 @@ export default function Navbar() {
                                 Let&#39;s connect
                             </p>
                             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <FaLinkedinIn />
-                                </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <FaGithub />
-                                </div>
-                                
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <AiOutlineMail />
-                                </div>
-
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <BsFillPersonLinesFill />
-                                </div>
+                                <a
+                                    href="https://www.linkedin.com/in/denise-bamberg-b07b42161/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                        <FaLinkedinIn />
+                                    </div>
+                                </a>
+                                <a
+                                    href="https://github.com/Deni465"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                        <FaGithub />
+                                    </div>
+                                </a>
+                                <a href="mailto:denise.bamberg@web.de">
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                        <AiOutlineMail />
+                                    </div>
+                                </a>
+                                <a href="assets/DeniseBambergCV.pdf" download>
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                        <BsFillPersonLinesFill />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>

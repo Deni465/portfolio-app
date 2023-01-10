@@ -37,18 +37,37 @@ export const Contact = () => {
                                     Connect With Me
                                 </p>
                                 <div className="flex items-center justify-between py-4">
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <FaLinkedinIn />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <FaGithub />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <AiOutlineMail />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <BsFillPersonLinesFill />
-                                    </div>
+                                    <a
+                                        href="https://www.linkedin.com/in/denise-bamberg-b07b42161/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                            <FaLinkedinIn />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="https://github.com/Deni465"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                            <FaGithub />
+                                        </div>
+                                    </a>
+                                    <a href="mailto:denise.bamberg@web.de">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                            <AiOutlineMail />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="assets/DeniseBambergCV.pdf"
+                                        download
+                                    >
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                            <BsFillPersonLinesFill />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

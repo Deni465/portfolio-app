@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Social from "../public/assets/projects/SocialNetwork.png";
+import { RiRadioButtonFill } from "react-icons/ri";
+import Link from "next/link";
 
 const socialnetwork = () => {
     return (
@@ -16,10 +18,53 @@ const socialnetwork = () => {
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
                     <h2 className="py-2">Social Network</h2>
-                    <h3>
-                        React JS / Redux / SocketIO / Javascript/ PostgresSQL
-                    </h3>
+                    <h3>React JS / Javascript</h3>
                 </div>
+            </div>
+
+            <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
+                <div className="col-span-4">
+                    <p className="uppercase text-teal-500">Project</p>
+                    <h2>Overview</h2>
+                    <p>
+                        The app contains the basic functionality of a social
+                        network. You can log in, reset the password in case you
+                        forgot it, search users, make friendship requests and
+                        accept requests, check on your friends & chat with other
+                        users. I plan to implement a 1:1 chat, edit profile & a
+                        posts page.
+                    </p>
+                    <button className="px-8 py-2 mt-4">Github</button>
+                </div>
+                <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+                    <div className="p-2">
+                        <p className="text-center font-bold pb-2">
+                            Technologies
+                        </p>
+                        <div className="grid grid-cols-3 md:grid-cols-1">
+                            <p className="text-gray-600 py-2 flex items-center">
+                                <RiRadioButtonFill className="pr-1" /> ReactJS
+                            </p>
+                            <p className="text-gray-600 py-2 flex items-center">
+                                <RiRadioButtonFill className="pr-1" />
+                                Javascript
+                            </p>
+                            <p className="text-gray-600 py-2 flex items-center">
+                                <RiRadioButtonFill className="pr-1" />
+                                PostgresSQL
+                            </p>
+                            <p className="text-gray-600 py-2 flex items-center">
+                                <RiRadioButtonFill className="pr-1" /> SocketIO
+                            </p>
+                            <p className="text-gray-600 py-2 flex items-center">
+                                <RiRadioButtonFill className="pr-1" /> Redux
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <Link href="/#projects">
+                    <p className="underline cursor-pointer">Back</p>
+                </Link>
             </div>
         </div>
     );
