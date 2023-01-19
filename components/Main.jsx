@@ -20,11 +20,11 @@ export default function Main() {
                     </h1>
                     <p className="py-4 text-gray-600 max-w-[70%] m-auto">
                         I recently graduated from Spiced Academy, as a Fullstack
-                        Developer. In several projects (Petition, Imageboard,
-                        Social Network) we prove, what we&#39;ve learned so far.
-                        Now I want to show the world my new skills, sharpen and
-                        improve the ones I have, learn new ones and contribute
-                        to the companies.
+                        Developer. In several projects, such as Petition,
+                        Imageboard, Social Network I prove, what I&#39;ve
+                        learned so far. Now I want to show the world my new
+                        skills, sharpen and improve the ones I have, learn new
+                        ones and contribute to the companies.
                     </p>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                         <a

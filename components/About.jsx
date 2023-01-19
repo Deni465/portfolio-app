@@ -1,5 +1,7 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
+import Link from "next/link";
 import React from "react";
+// @ts-ignore
 import Tealit from "../public/assets/tealit.jpg";
 
 export default function About() {
@@ -15,18 +17,31 @@ export default function About() {
                     </p>
                     <h2 className="py-4">Who I Am</h2>
                     <p className="py-4 text-gray-600">
-                        I recently graduated from Spiced Academy, as a Fullstack
-                        Developer. In several projects (Petition, Imageboard,
-                        Social Network) we prove, what we&#39;ve learned so far.
+                        As a experienced office manager, I have had the
+                        privilege of working for a diverse range of companies
+                        across various industries such as job advertisement,
+                        3D-printing, co-working space, and media company /
+                        agency. In addition to my primary role, I have also
+                        taken on side jobs in retail, grocery store and club
+                        settings. This experience has given me a unique
+                        perspective and the ability to adapt to new environments
+                        quickly. My interest in understanding the inner workings
+                        of a business has led me to seek out opportunities to
+                        gain hands-on experience.
                     </p>
                     <p className="py-4 text-gray-600">
-                        Now I want to show the world my new skills, sharpen and
-                        improve the ones I have, learn some new ones and
-                        contribute to the companies.
+                        I have decided to take on the challenge of learning
+                        coding through a bootcamp. I am excited to bring my
+                        diverse background and passion for learning to this new
+                        challenge and look forward to the opportunities it will
+                        bring. I am determined to succeed in this new field and
+                        am eager to apply my skills in a professional setting.
                     </p>
-                    <p className="py-4 text-gray-600 underline cursor-pointer">
-                        Check Out My Latest Projects
-                    </p>
+                    <Link href="/#projects">
+                        <p className="py-4 text-gray-600 underline cursor-pointer">
+                            Check Out My Latest Projects
+                        </p>
+                    </Link>
                 </div>
                 <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
                     <Image className="rounded-xl" src={Tealit} alt="/" />

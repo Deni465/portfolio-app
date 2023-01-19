@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 // @ts-ignore
 import Petition from "../public/assets/projects/petition.png";
@@ -11,6 +11,7 @@ const petition = () => {
             <div className="w-screen h-[30vh] lg:h-[40vh] relative">
                 <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
                 <Image
+                    priority
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
@@ -35,7 +36,12 @@ const petition = () => {
                         homepage. Additionally, users can edit their profile or
                         remove and resubmit their signature on the petition.
                     </p>
-                    <button className="px-8 py-2 mt-4">Github</button>
+                    <Link
+                        href={"https://github.com/Deni465/petition"}
+                        target={"_blank"}
+                    >
+                        <button className="px-8 py-2 mt-4">Github</button>
+                    </Link>
                 </div>
                 <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
                     <div className="p-2">

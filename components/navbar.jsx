@@ -1,15 +1,19 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
+// @ts-ignore
+import Dbwhite from "../public/assets/dbwhite.png";
+// @ts-ignore
+import Db from "../public/assets/db.png";
 
 export default function Navbar() {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState("#ecf0f3");
+    const [src, setSrc] = useState(Db);
     const [linkColor, setLinkColor] = useState("#1f2937");
     const router = useRouter();
 
@@ -20,10 +24,10 @@ export default function Navbar() {
             router.asPath === "/recipeapp" ||
             router.asPath === "/petition"
         ) {
-            setNavBg("#ecf0f3");
+            setSrc(Dbwhite);
             setLinkColor("#ecf0f3");
         } else {
-            setNavBg("transparent");
+            setSrc(Db);
             setLinkColor("#1f2937");
         }
     }, [router]);
@@ -52,14 +56,8 @@ export default function Navbar() {
             }
         >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                <Link href="/" style={{ backgroundColor: `${navBg}` }}>
-                    <Image
-                        src="/../public/assets/db.png"
-                        alt="/"
-                        width="100"
-                        height="50"
-                        priority
-                    />
+                <Link href="/">
+                    <Image src={src} alt="/" width="100" height="50" priority />
                 </Link>
 
                 <div>

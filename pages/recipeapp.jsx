@@ -11,6 +11,7 @@ const recipeapp = () => {
             <div className="w-screen h-[30vh] lg:h-[40vh] relative">
                 <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
                 <Image
+                    priority
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
@@ -33,8 +34,11 @@ const recipeapp = () => {
                         new set of technologies that I hadn&#39;t worked with
                         before.
                     </p>
-                    <Link href="">
-                    <button className="px-8 py-2 mt-4" >Github</button>
+                    <Link
+                        href="https://github.com/Deni465/recipe-app"
+                        target={"_blank"}
+                    >
+                        <button className="px-8 py-2 mt-4">Github</button>
                     </Link>
                 </div>
                 <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">

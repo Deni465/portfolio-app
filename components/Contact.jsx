@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
@@ -30,9 +30,12 @@ export const Contact = () => {
                                     Junior Full Stack Developer based in Berlin
                                 </p>
                                 <p className="py-4">
-                                    I am available for full-time positions.
-                                    Contact me and let&#39;s talk.
+                                    I am available for full-time positions. I
+                                    would be thrilled to discuss any open
+                                    positions that align with my skills and
+                                    experience.
                                 </p>
+                                <p>Contact me and let&#39;s talk.</p>
                             </div>
                             <div>
                                 <p className="uppercase py-8 text-teal-500">
@@ -40,7 +43,7 @@ export const Contact = () => {
                                 </p>
                                 <div className="flex items-center justify-between py-4">
                                     <a
-                                        href="http://"
+                                        href="https://www.linkedin.com/in/denise-bamberg-b07b42161/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
