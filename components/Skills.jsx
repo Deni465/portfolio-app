@@ -2,6 +2,26 @@ import Image from "next/legacy/image";
 import React from "react";
 // @ts-ignore
 import CSS from "../public/assets/skills/css.png";
+// @ts-ignore
+import HTML from "../public/assets/skills/html.png";
+// @ts-ignore
+import javascript from "../public/assets/skills/javascript.png";
+// @ts-ignore
+import Next from "../public/assets/skills/next.png";
+// @ts-ignore
+import Nodejs from "../public/assets/skills/nodejs.png";
+// @ts-ignore
+import Postgres from "../public/assets/skills/postgres.png";
+// @ts-ignore
+import react from "../public/assets/skills/react.png";
+// @ts-ignore
+import Tableplus from "../public/assets/skills/tableplus.png";
+// @ts-ignore
+import Tailwind from "../public/assets/skills/tailwind.png";
+// @ts-ignore
+import Vscode from "../public/assets/skills/vscode.png";
+// @ts-ignore
+import Vuejs from "../public/assets/skills/vuejs.png";
 
 export default function Skills() {
     return (
@@ -31,7 +51,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/html.png"
+                                    src={HTML}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -46,7 +66,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/javascript.png"
+                                    src={javascript}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -61,7 +81,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/react.png"
+                                    src={react}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -76,7 +96,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/vuejs.png"
+                                    src={Vuejs}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -91,7 +111,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/next.png"
+                                    src={Next}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -106,7 +126,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/nodejs.png"
+                                    src={Nodejs}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -121,7 +141,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/postgres.png"
+                                    src={Postgres}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -137,7 +157,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/tailwind.png"
+                                    src={Tailwind}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -152,7 +172,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/vscode.png"
+                                    src={Vscode}
                                     width="64"
                                     height="64"
                                     alt="/"
@@ -168,7 +188,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/tableplus.png"
+                                    src={Tableplus}
                                     width="64"
                                     height="64"
                                     alt="/"
