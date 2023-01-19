@@ -1,6 +1,13 @@
 import React from "react";
 import ProjectItem from "./Projectitem.jsx";
+// @ts-ignore
 import Social from "../public/assets/projects/SocialNetwork.png";
+// @ts-ignore
+import Imageboard from "../public/assets/projects/imageboard.png";
+// @ts-ignore
+import Recipe from "../public/assets/projects/recipeapp.png";
+// @ts-ignore
+import Petition from "../public/assets/projects/petition.png";
 
 export default function Projects() {
     return (
@@ -12,9 +19,9 @@ export default function Projects() {
                 <h2 className="py-4">What I&#39;ve Built</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     <ProjectItem
-                        title="SocialNetwork"
-                        backgroundImg={Social}
-                        projectUrl="/socialnetwork"
+                        title="RecipeApp"
+                        backgroundImg={Recipe}
+                        projectUrl="/recipeapp"
                     />
                     <ProjectItem
                         title="SocialNetwork"
@@ -22,14 +29,14 @@ export default function Projects() {
                         projectUrl="/socialnetwork"
                     />
                     <ProjectItem
-                        title="SocialNetwork"
-                        backgroundImg={Social}
-                        projectUrl="/socialnetwork"
+                        title="Imageboard"
+                        backgroundImg={Imageboard}
+                        projectUrl="/imageboard"
                     />
                     <ProjectItem
-                        title="SocialNetwork"
-                        backgroundImg={Social}
-                        projectUrl="/socialnetwork"
+                        title="Petition"
+                        backgroundImg={Petition}
+                        projectUrl="/petition"
                     />
                 </div>
             </div>

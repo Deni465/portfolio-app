@@ -4,6 +4,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+// @ts-ignore
 import ContactImg from "../public/assets/contact.jpg";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
@@ -16,7 +17,6 @@ export const Contact = () => {
                 </p>
                 <h2 className="py-4">Get In Touch</h2>
                 <div>
-                    {/*left*/}
                     <div className=" lg: w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
                         <div className="lg:p-4 h-full">
                             <Image
@@ -26,7 +26,9 @@ export const Contact = () => {
                             />
                             <div>
                                 <h2 className="py-4">Denise Bamberg</h2>
-                                <p>Junior Full Stack Developer based in Berlin</p>
+                                <p>
+                                    Junior Full Stack Developer based in Berlin
+                                </p>
                                 <p className="py-4">
                                     I am available for full-time positions.
                                     Contact me and let&#39;s talk.

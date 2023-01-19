@@ -16,7 +16,9 @@ export default function Navbar() {
     useEffect(() => {
         if (
             router.asPath === "/socialnetwork" ||
-            router.asPath === "/imageboard"
+            router.asPath === "/imageboard" ||
+            router.asPath === "/recipeapp" ||
+            router.asPath === "/petition"
         ) {
             setNavBg("#ecf0f3");
             setLinkColor("#ecf0f3");

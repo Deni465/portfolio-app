@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+// @ts-ignore
 import Social from "../public/assets/projects/SocialNetwork.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
@@ -8,7 +9,7 @@ const socialnetwork = () => {
     return (
         <div className="w-full">
             <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-                <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
+                <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
                 <Image
                     className="absolute z-1"
                     layout="fill"
@@ -26,13 +27,12 @@ const socialnetwork = () => {
                 <div className="col-span-4">
                     <p className="uppercase text-teal-500">Project</p>
                     <h2>Overview</h2>
-                    <p>
-                        The app contains the basic functionality of a social
-                        network. You can log in, reset the password in case you
-                        forgot it, search users, make friendship requests and
-                        accept requests, check on your friends & chat with other
-                        users. I plan to implement a 1:1 chat, edit profile & a
-                        posts page.
+                    <p className="my-4">
+                        This social media project is a basic social network app
+                        that allows users to log in, reset their passwords,
+                        search for other users, send and accept friendship
+                        requests, view their friends list and chat with other
+                        users.
                     </p>
                     <button className="px-8 py-2 mt-4">Github</button>
                 </div>
