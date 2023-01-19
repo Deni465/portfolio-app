@@ -57,7 +57,13 @@ export default function Navbar() {
         >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href="/">
-                    <Image src={src} alt="/" width="100" height="50" priority />
+                    <Image
+                        src={src}
+                        alt="/"
+                        width="100"
+                        height="50"
+                        priority={true}
+                    />
                 </Link>
 
                 <div>
