@@ -23,6 +23,7 @@ export const Contact = () => {
                                 className="rounded-xl hover:scale-105 ease-in duration-300"
                                 src={ContactImg}
                                 alt="/"
+                                priority={true}
                             />
                             <div>
                                 <h2 className="py-4">Denise Bamberg</h2>

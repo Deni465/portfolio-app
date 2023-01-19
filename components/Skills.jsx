@@ -1,5 +1,7 @@
 import Image from "next/legacy/image";
 import React from "react";
+// @ts-ignore
+import CSS from "../public/assets/skills/css.png";
 
 export default function Skills() {
     return (
@@ -14,7 +16,7 @@ export default function Skills() {
                         <div className="grid grid-cols-2 gap-4 justify-center items-center">
                             <div className="m-auto">
                                 <Image
-                                    src="/../public/assets/skills/css.png"
+                                    src={CSS}
                                     width="64"
                                     height="64"
                                     alt="/"
