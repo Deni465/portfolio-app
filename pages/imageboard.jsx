@@ -11,7 +11,7 @@ const imageboard = () => {
             <div className="w-screen h-[30vh] lg:h-[40vh] relative">
                 <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
                 <Image
-                    priority={true}
+                    // priority={true}
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
