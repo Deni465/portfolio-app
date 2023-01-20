@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import React from "react";
 // @ts-ignore
 import Social from "../public/assets/projects/SocialNetwork.png";
