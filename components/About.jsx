@@ -17,7 +17,7 @@ export default function About() {
                     </p>
                     <h2 className="py-4">Who I Am</h2>
                     <p className="py-4 text-gray-600">
-                        As a experienced office manager, I have had the
+                        As an experienced office manager, I have had the
                         privilege of working for a diverse range of companies
                         across various industries such as job advertisement,
                         3D-printing, co-working space, and media company /
