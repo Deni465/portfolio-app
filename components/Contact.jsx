@@ -39,9 +39,15 @@ export const Contact = () => {
                                 <p>Contact me and let&#39;s talk.</p>
                             </div>
                             <div>
-                                <p className="uppercase py-8 text-teal-500">
+                                <p className="uppercase pt-8 text-teal-500">
                                     Connect With Me
                                 </p>
+                                <div className="py-4">
+                                    <p>Denise Bamberg</p>
+                                    <p>denise.bamberg@web.de</p>
+                                    <p>Möllendorffstr. 93</p>
+                                    <p>10367 Berlin</p>
+                                </div>
                                 <div className="flex items-center justify-between py-4">
                                     <a
                                         href="https://www.linkedin.com/in/denise-bamberg-b07b42161/"
